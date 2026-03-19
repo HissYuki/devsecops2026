@@ -35,4 +35,5 @@ jobs:
       - name: Instalando safety
         run: pip install safety
       - name: Análise de Composição de Software
+        run: safety auth
         run: safety scan
