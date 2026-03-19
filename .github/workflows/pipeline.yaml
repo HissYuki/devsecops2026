@@ -31,7 +31,7 @@ jobs:
     name: "Safety"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checktou@v2
+      - uses: actions/checkout@v2
       - name: Instalando safety
         run: pip install safety
       - name: Análise de Composição de Software
