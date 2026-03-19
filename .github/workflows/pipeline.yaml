@@ -27,3 +27,12 @@ jobs:
         run: pip install bandit
       - name: Análise estática
         run: bandit -r .
+  sca:
+    name: "Safety
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checktou@v2
+      - name: Instalando safety
+        run: pip install safety
+      - name: Análise de Composição de Software
+        run: safety scan
